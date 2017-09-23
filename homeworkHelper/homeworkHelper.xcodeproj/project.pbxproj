@@ -15,6 +15,13 @@
 		602303C41F72F1F200470D1B /* assignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602303C31F72F1F200470D1B /* assignments.swift */; };
 		602303C81F736F3100470D1B /* AssignmentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602303C71F736F3100470D1B /* AssignmentTableViewController.swift */; };
 		602303CA1F73730300470D1B /* AssignmentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 602303C91F73730300470D1B /* AssignmentTableViewCell.swift */; };
+		60B6DA661F75DA5B002881CE /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B6DA651F75DA5B002881CE /* calendar.swift */; };
+		60D6A2801F765DBF00AEC4DB /* calViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D6A27F1F765DBF00AEC4DB /* calViewController.swift */; };
+		60D6A2821F7660EF00AEC4DB /* calCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D6A2811F7660EF00AEC4DB /* calCollectionViewController.swift */; };
+		60D6A2871F76664300AEC4DB /* calCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D6A2861F76664300AEC4DB /* calCollectionViewCell.swift */; };
+		60D6A28B1F766B6600AEC4DB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D6A28A1F766B6600AEC4DB /* MapKit.framework */; };
+		60D6A28D1F7677E800AEC4DB /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D6A28C1F7677E800AEC4DB /* mapViewController.swift */; };
+		60D6A28F1F7681B500AEC4DB /* map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D6A28E1F7681B500AEC4DB /* map.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		602303C31F72F1F200470D1B /* assignments.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = assignments.swift; path = ../assignments.swift; sourceTree = "<group>"; };
 		602303C71F736F3100470D1B /* AssignmentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewController.swift; sourceTree = "<group>"; };
 		602303C91F73730300470D1B /* AssignmentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignmentTableViewCell.swift; sourceTree = "<group>"; };
+		60B6DA651F75DA5B002881CE /* calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
+		60D6A27F1F765DBF00AEC4DB /* calViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calViewController.swift; sourceTree = "<group>"; };
+		60D6A2811F7660EF00AEC4DB /* calCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calCollectionViewController.swift; sourceTree = "<group>"; };
+		60D6A2861F76664300AEC4DB /* calCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calCollectionViewCell.swift; sourceTree = "<group>"; };
+		60D6A28A1F766B6600AEC4DB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		60D6A28C1F7677E800AEC4DB /* mapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		60D6A28E1F7681B500AEC4DB /* map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = map.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60D6A28B1F766B6600AEC4DB /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,7 @@
 			children = (
 				602303B01F72EB8800470D1B /* homeworkHelper */,
 				602303AF1F72EB8800470D1B /* Products */,
+				60D6A2891F766B6600AEC4DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,17 +76,55 @@
 		602303B01F72EB8800470D1B /* homeworkHelper */ = {
 			isa = PBXGroup;
 			children = (
-				602303C31F72F1F200470D1B /* assignments.swift */,
+				60D6A2851F76612000AEC4DB /* assignment */,
 				602303B11F72EB8800470D1B /* AppDelegate.swift */,
 				602303B31F72EB8800470D1B /* ViewController.swift */,
 				602303B51F72EB8800470D1B /* Main.storyboard */,
 				602303B81F72EB8800470D1B /* Assets.xcassets */,
 				602303BA1F72EB8800470D1B /* LaunchScreen.storyboard */,
 				602303BD1F72EB8800470D1B /* Info.plist */,
+				60D6A2841F76610B00AEC4DB /* cal */,
+				60D6A2901F7681BB00AEC4DB /* map */,
+			);
+			path = homeworkHelper;
+			sourceTree = "<group>";
+		};
+		60D6A2841F76610B00AEC4DB /* cal */ = {
+			isa = PBXGroup;
+			children = (
+				60B6DA651F75DA5B002881CE /* calendar.swift */,
+				60D6A2861F76664300AEC4DB /* calCollectionViewCell.swift */,
+				60D6A27F1F765DBF00AEC4DB /* calViewController.swift */,
+				60D6A2811F7660EF00AEC4DB /* calCollectionViewController.swift */,
+			);
+			name = cal;
+			sourceTree = "<group>";
+		};
+		60D6A2851F76612000AEC4DB /* assignment */ = {
+			isa = PBXGroup;
+			children = (
+				602303C31F72F1F200470D1B /* assignments.swift */,
 				602303C71F736F3100470D1B /* AssignmentTableViewController.swift */,
 				602303C91F73730300470D1B /* AssignmentTableViewCell.swift */,
 			);
-			path = homeworkHelper;
+			name = assignment;
+			sourceTree = "<group>";
+		};
+		60D6A2891F766B6600AEC4DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60D6A28A1F766B6600AEC4DB /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60D6A2901F7681BB00AEC4DB /* map */ = {
+			isa = PBXGroup;
+			children = (
+				60D6A28C1F7677E800AEC4DB /* mapViewController.swift */,
+				60D6A28E1F7681B500AEC4DB /* map.swift */,
+			);
+			name = map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -105,6 +159,7 @@
 				TargetAttributes = {
 					602303AD1F72EB8800470D1B = {
 						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -146,8 +201,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				602303B41F72EB8800470D1B /* ViewController.swift in Sources */,
+				60D6A28D1F7677E800AEC4DB /* mapViewController.swift in Sources */,
+				60D6A2801F765DBF00AEC4DB /* calViewController.swift in Sources */,
 				602303B21F72EB8800470D1B /* AppDelegate.swift in Sources */,
+				60D6A2871F76664300AEC4DB /* calCollectionViewCell.swift in Sources */,
+				60D6A28F1F7681B500AEC4DB /* map.swift in Sources */,
+				60D6A2821F7660EF00AEC4DB /* calCollectionViewController.swift in Sources */,
 				602303CA1F73730300470D1B /* AssignmentTableViewCell.swift in Sources */,
+				60B6DA661F75DA5B002881CE /* calendar.swift in Sources */,
 				602303C81F736F3100470D1B /* AssignmentTableViewController.swift in Sources */,
 				602303C41F72F1F200470D1B /* assignments.swift in Sources */,
 			);
@@ -278,7 +339,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gifton.homeworkHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -290,7 +352,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.gifton.homeworkHelper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
